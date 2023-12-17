@@ -1,2 +1,2 @@
 # PrepBuddy
-SAT Time Management Web Application
+Web Application For SAT Time Management 
