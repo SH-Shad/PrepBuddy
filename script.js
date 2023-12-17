@@ -81,13 +81,6 @@ document.getElementById('next-question').addEventListener('click', function() {
     sound.currentTime = 0; // Reset the sound to the beginning
 });
 
-// document.getElementById('mute-button').addEventListener('click', function() {
-//     const sound = document.getElementById('timer-sound');
-//     isMuted = !isMuted;
-//     sound.muted = isMuted;
-//     this.textContent = isMuted ? 'Unmute' : 'Mute';
-// });
-
 document.getElementById('mute-button').addEventListener('click', function() {
     const sound = document.getElementById('timer-sound');
     sound.muted = !sound.muted;
@@ -125,9 +118,14 @@ function startTimer(seconds) {
     }, 1000);
 
     // Reset and enable/disable relevant buttons
+    // document.getElementById('pause-timer').disabled = false;
+    // document.getElementById('reset-timer').disabled = false;
+    // document.getElementById('start-timer').disabled = true;
     document.getElementById('pause-timer').disabled = false;
+    document.getElementById('pause-timer').textContent = 'Pause'; // Reset text to 'Pause'
     document.getElementById('reset-timer').disabled = false;
     document.getElementById('start-timer').disabled = true;
+    isPaused = false; // Reset pause state
 }
 
 function playSound() {
