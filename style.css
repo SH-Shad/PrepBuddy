@@ -132,24 +132,3 @@ button:disabled {
     font-weight: bold;
     color: red;
 }
-
-#question-mute-controls {
-    display: flex;
-    align-items: center; /* Align buttons vertically */
-    justify-content: space-between; /* Space between the buttons */
-    gap: 10px; /* Space between the buttons */
-}
-
-#question-mute-controls button {
-    flex: 1; /* Both buttons take up equal space */
-}
-
-.square-button {
-    width: 50px; /* Fixed width for square shape */
-    height: 50px; /* Fixed height for square shape */
-    padding: 0; /* Remove padding to ensure the button stays square */
-    border-radius: 0; /* Square corners */
-    font-size: 24px; /* Adjust icon size */
-    line-height: 50px; /* Center the icon vertically */
-    text-align: center; /* Center the icon horizontally */
-}

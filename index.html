@@ -25,9 +25,11 @@
             Question: <span id="current-question">0</span> of <span id="total-questions">0</span>
         </div>
         <div id="timer-controls">
-            <button id="start-timer">Start Timer</button>
+            <button id="start-timer">Start</button>
             <button id="pause-timer" disabled>Pause</button>
             <button id="reset-timer" disabled>Reset</button>
+            <audio id="timer-sound" src="sound.mp3"></audio>
+            <button id="mute-button">🔈</button> <!-- Unicode speaker icon -->
         </div>
         <div id="current-time">
             Time Remaining: <span id="time-remaining">0:00</span>
@@ -35,18 +37,13 @@
         <div id="progress-bar-container">
             <div id="progress-bar"></div>
         </div>
-        <div id="question-mute-controls">
+
             <button id="next-question">Next Question</button>
-            <!-- Use an icon or text for the mute button -->
-            <audio id="timer-sound" src="sound.mp3"></audio>
-            <button id="mute-button">🔈</button> <!-- Unicode speaker icon -->
-        </div>
+
         <div id="summary" hidden>
             <p id="summary-text"></p>
         </div>
-        <!-- Audio Element and Mute Button
-        <audio id="timer-sound" src="sound.mp3"></audio>
-        <button id="mute-button">Mute</button> -->
+
     </div>
     <footer>
         <p>Created by Md Sajid Hossain Sad</p>
