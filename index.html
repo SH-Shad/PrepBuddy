@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrepBuddy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="timer-app">
+        <h2>PrepBuddy</h2>
+        <div class="input-group">
+            <label for="total-duration">Total Duration (minutes):</label>
+            <input type="number" id="total-duration" placeholder="e.g., 120" min="0">
+        </div>
+        <div class="input-group">
+            <label for="question-count">Number of Questions:</label>
+            <input type="number" id="question-count" placeholder="e.g., 60" min="0">
+        </div>
+        <button id="calculate-btn">Calculate</button>
+        <div id="average-time">
+            Average Time per Question: <span id="avg-time-display">0</span> seconds
+        </div>
+        <div id="question-info">
+            Question: <span id="current-question">0</span> of <span id="total-questions">0</span>
+        </div>
+        <div id="timer-controls">
+            <button id="start-timer">Start Timer</button>
+            <button id="pause-timer" disabled>Pause</button>
+            <button id="reset-timer" disabled>Reset</button>
+        </div>
+        <div id="current-time">
+            Time Remaining: <span id="time-remaining">0:00</span>
+        </div>
+        <div id="progress-bar-container">
+            <div id="progress-bar"></div>
+        </div>
+        <div id="question-mute-controls">
+            <button id="next-question">Next Question</button>
+            <!-- Use an icon or text for the mute button -->
+            <audio id="timer-sound" src="sound.mp3"></audio>
+            <button id="mute-button">🔈</button> <!-- Unicode speaker icon -->
+        </div>
+        <div id="summary" hidden>
+            <p id="summary-text"></p>
+        </div>
+        <!-- Audio Element and Mute Button
+        <audio id="timer-sound" src="sound.mp3"></audio>
+        <button id="mute-button">Mute</button> -->
+    </div>
+    <footer>
+        <p>Created by Md Sajid Hossain Sad</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
